@@ -1,0 +1,12 @@
+<%- include('header.ejs') %>
+    <h1>List of all jobs</h1>
+    
+    <% for(let job of foundJobs){ %>
+        <div>
+            <%= job.name %>
+            <a class="btn btn-success" href="/jobs/<%= job._id %>">GO</a>
+        </div>     
+    <% } %>
+    <a class="btn btn-primary" href="/jobs/new">Add a new job</a>
+</body>
+</html>

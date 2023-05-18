@@ -1,0 +1,38 @@
+<%- include('header.ejs') %>
+<div class="col-6 m-auto">
+    <h1>Form to create a new job</h1>
+    <form action="/jobs" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Enter Job Name</label>
+            <input type="text" class="form-control" name="name" id="name">
+        </div>
+        <div class="mb-3">
+            <label for="address"class="form-label">Enter job location</label>
+            <input type="text" class="form-control" name="address" id="address">
+        </div>
+        <div class="mb-3">
+            <label for="image"class="form-label">Enter logo url</label>
+            <input type="text"class="form-control"  name="image" id="image">
+        </div>
+        <div class="mb-3">
+            <label for="package"class="form-label">Salary</label>
+            <input type="text"class="form-control"  name="package" id="package">
+        </div>
+        <div class="mb-3">
+            <label for="cgpa"class="form-label">Minimum CGPA</label>
+            <input type="number"class="form-control"  name="cgpa" id="cgpa">
+        </div>
+        <div class="mb-3">
+            <label for="deadline"class="form-label">Deadline</label>
+            <input type="date"class="form-control"  name="deadline" id="deadline">
+        </div>
+        <div class="mb-3">
+            <label for="type"class="form-label">Job type</label>
+            <input type="text"class="form-control"  name="type" id="type">
+        </div>
+        <button type="submit" class="btn btn-primary">ADD JOB</button>
+    </form>
+</div>
+    
+</body>
+</html>

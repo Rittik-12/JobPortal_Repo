@@ -1,0 +1,9 @@
+<%- include('../header.ejs') %>
+<% for( let notif of notifications ) { %>
+    <div> body: <%= notif.body %>, Author: <%= notif.author %></div>
+
+<% } %>
+<a class="btn btn-primary" href="/notification/new">Add a new notification</a>
+    
+</body>
+</html>

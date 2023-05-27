@@ -105,7 +105,7 @@ router.patch('/jobs/:id', async function(req,res){
         };
         await Job.findByIdAndUpdate(id,updatedJob);
         let newNotif= new Notification({
-            body:'A Job has been uupdated by: ',
+            body:'A Job has been updated by: ',
             author: updatedJob.name
         });
         await newNotif.save();

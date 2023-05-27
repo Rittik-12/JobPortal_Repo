@@ -7,6 +7,7 @@ router.get('/notification',async function(req,res){
     // res.render('index.ejs');
     try {
         let notifications= await Notification.find({});
+        // res.render('notification/index.ejs',{notifications});
         res.render('notification/index.ejs',{notifications});
     } catch (error) {
         console.log(error);
